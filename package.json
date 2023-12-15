@@ -19,8 +19,7 @@
     "utils"
   ],
   "scripts": {
-    "format": "prettier --write \"./**/*.{js,json}\"",
-    "test": "node ./index.js",
+    "test": "node index.js"
   },
   "dependencies": {
     "@clack/core": "^0.3.3",
