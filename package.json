@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "format": "prettier --write \"./**/*.{js,json}\"",
-    "test": "node index.js",
+    "test": "mocha tests/**/*.js",
   },
   "dependencies": {
     "@clack/core": "^0.3.3",
