@@ -1,0 +1,46 @@
+{
+  "name": "kazima",
+  "description": "Kazima is a Command Line Interface that is useful for performing data scraping in the browser environment. Kazima was created and developed by Elzains (Zainal Arifin) who is the founder of Latardev.com",
+  "tagline": "Unlimited Fast Data Scraping",
+  "version": "1.0.0",
+  "versions": "KD1 Beta",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "kazima": "index.js"
+  },
+  "author": "Zainal Arifin Elzains <zain.elibrahimy@gmail.com> (https://github.com/elzains)",
+  "keywords": [
+    "kazima",
+    "Zainal Arifin Elzains"
+  ],
+  "files": [
+    "index.js",
+    "utils"
+  ],
+  "scripts": {
+    "format": "prettier --write \"./**/*.{js,json}\""
+  },
+  "dependencies": {
+    "@clack/core": "^0.3.3",
+    "cli-alerts": "^1.2.2",
+    "cli-handle-error": "^4.4.0",
+    "cli-handle-unhandled": "^1.1.1",
+    "cli-meow-help": "^3.1.0",
+    "cli-table3": "^0.6.3",
+    "cli-welcome": "^2.2.2",
+    "fs": "^0.0.1-security",
+    "json2xls": "^0.1.2",
+    "meow": "^9.0.0",
+    "mysql": "^2.18.1",
+    "opn": "^6.0.0",
+    "ora": "^7.0.1",
+    "puppeteer": "^21.6.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "jiti": "^1.21.0",
+    "prettier": "^3.1.1"
+  },
+  "main": "index.js"
+}
