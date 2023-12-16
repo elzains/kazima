@@ -1,0 +1,21 @@
+name: "package npm"
+
+on: push
+
+jobs:
+    publish:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout
+              uses: actions/checkout@v2
+            - name: node
+              uses: actions/setup-node@v2
+              with:
+                  node-version: 20
+                  scope: ${{ github.repository_owner }}
+                  registry-url: https://npm.pkg.github.com/
+            - name: publish
+              run: npm publish --access public
+              working-directory: ./
+              env:
+                  NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
