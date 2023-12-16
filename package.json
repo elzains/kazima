@@ -1,5 +1,5 @@
 {
-  "name": "kazima",
+  "name": "@elzains/kazima",
   "description": "Kazima is a Command Line Interface that is useful for performing data scraping in the browser environment. Kazima was created and developed by Elzains (Zainal Arifin) who is the founder of Latardev.com",
   "tagline": "Unlimited Fast Data Scraping",
   "version": "1.0.0",
@@ -19,7 +19,7 @@
     "utils"
   ],
   "scripts": {
-    "test": "node index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "@clack/core": "^0.3.3",
